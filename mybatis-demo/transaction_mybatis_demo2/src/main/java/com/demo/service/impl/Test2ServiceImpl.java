@@ -18,6 +18,9 @@ public class Test2ServiceImpl implements Test2Service {
     @Autowired
     private TestDao testDao;
 
+    @Autowired
+    private Test3ServiceImpl test3Service;
+
 
     @Override
     @Transactional
@@ -28,6 +31,7 @@ public class Test2ServiceImpl implements Test2Service {
         Test test = new Test();
         test.setName(name);
         testDao.save(test);
+        test3Service.test();
 
         return name;
     }
