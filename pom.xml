@@ -49,6 +49,8 @@
 
         <lcn.last.version>4.1.0</lcn.last.version>
 
+        <tomcat.version>8.5.24</tomcat.version>
+
     </properties>
 
     <dependencies>
@@ -63,6 +65,19 @@
             <groupId>com.codingapi</groupId>
             <artifactId>tx-plugins-db</artifactId>
             <version>${lcn.last.version}</version>
+        </dependency>
+
+        <!-- tomcat -->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>${tomcat.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <version>${tomcat.version}</version>
         </dependency>
 
 
