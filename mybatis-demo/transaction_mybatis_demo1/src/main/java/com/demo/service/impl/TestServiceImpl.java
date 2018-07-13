@@ -36,7 +36,7 @@ public class TestServiceImpl implements TestService {
         test.setName(name);
         testDao.save(test);
 
-        int v = 100/0;
+//        int v = 100/0;
 
         return res1;
     }

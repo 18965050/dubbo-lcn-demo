@@ -31,7 +31,7 @@ public class Test2ServiceImpl implements Test2Service {
         Test test = new Test();
         test.setName(name);
         testDao.save(test);
-        test3Service.test();
+//        test3Service.test();
 
         return name;
     }
